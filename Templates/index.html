@@ -1,36 +1,103 @@
 <!DOCTYPE html>
- <html>
- <head>
- <title>Home</title>
- <style>
+<!-- Final -->
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Student Management System</title>
+  <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+  <style>
+    /* Reset some default styles and set a background image */
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('/static/charles-deloye-2RouMSg9Rnw-unsplash.jpg');
+  background-size: cover;
+  font-family: Arial, sans-serif;
+}
 
-  body{
-   background-image: url('/static/1.jpg');
-   background-size: cover;
-   text-align: center;
-  }
+/* Style the container for centering content */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 150px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-  a:link, a:visited {
-  background-color: #f44336;
-  color: white;
-  padding: 14px 25px;
+/* Style the header */
+.header {
   text-align: center;
-  text-decoration: none;
+  padding: 20px 0;
+}
+
+.header h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+/* Style the content area */
+.content {
+  text-align: center;
+  padding: 20px;
+}
+
+.content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Style the menu buttons */
+.menu {
+  text-align: center;
+}
+
+.button {
   display: inline-block;
-  }
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  text-decoration: none;
+}
 
-  a:hover, a:active {
-  background-color: red;
-  }
+.primary {
+  background-color: #007BFF;
+  color: #fff;
+}
 
- </style>
- </head>
- <body>
+.danger {
+  background-color: #FF5733;
+  color: #fff;
+}
 
- <br><br><h1> Student Management System </h1>
- <br><br><a href="/add_student">Add Student</a><br><br>
- <br><br><a href="/delete_student">Delete Student </a><br><br>
- <br><br><a href ="/student_info">View Student Detials</a><br><br>
+.success {
+  background-color: #28A745;
+  color: #fff;
+}
 
- </body>
- </html>
+.button:hover {
+  opacity: 0.9;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Student Management System</h1>
+    </div>
+    <div class="content">
+      <p>Welcome to the Student Management System. This system allows you to manage student records with ease. You can add new students, delete existing students, and view detailed information about each student.</p>
+      <div class="menu">
+        <a href="/add_student.html" class="button primary">Add Student</a>
+        <a href="/delete_student.html" class="button danger">Delete Student</a>
+        <a href="/student_info.html" class="button success">View Student Details</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
